@@ -36,8 +36,7 @@ app.use(useRouterSaveDetails);
 
 mongoose
   .connect(
-    "mongodb+srv://prateek:ARub4LN122y0sxmC@cluster0.hg316ou.mongodb.net/INTER-IIT-TRUMIO?retryWrites=true&w=majority"
-    // MONGO_URL
+    MONGO_URL
   )
   .then(() => {
     app.listen(PORT, () => {
